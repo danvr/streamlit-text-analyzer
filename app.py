@@ -14,7 +14,6 @@ def main():
     app_mode = st.sidebar.selectbox('Navegation',['Bem Vindos','Word Cloud','Word Counter'])
     if app_mode == 'Bem Vindos':
         st.markdown("***")
-        st.markdown("## **Bem vindos ao Text Analizer**")
         st.markdown(
             "Projeto de desenvolvido durante a aceleração de Data Science da codenation.\n\n"
             "Para mais infocacoes sobre o projeto, segue o link do [GitHub](https://github.com/danvr/streamlit-text-analyzer).")
@@ -22,26 +21,45 @@ def main():
         st.markdown("***")
         st.markdown("## **Motivação**")
         st.markdown(
-    	"O objetivo e resolver uma dor real que envolva analise manipulação de dados.\n\n"
-        "Durante a fase de validação de um produto, e muito comum que sejam feitas pesquisas(**normalmente no Google Sheets**) "\
-        "de usuários para entender as verdadeiras dores "\
-        "O resultado desse processo normalmente gera uma massa de dados textuais"\
-        "texto aberto, onde o profissional de UX normalmente faz um processo manual de contagem de palavras e expressões.\n\n"
+    	"O objetivo e resolver uma dor real que envolva análise de dados.\n\n"
+        "Durante a fase de validação de um produto, e muito comum que sejam feitas pesquisas "\
+        "de usuários para entender as verdadeiras dores. "\
+        "O resultado desse processo normalmente gera uma massa de dados textuais, "\
+        "onde o profissional de UX normalmente faz um processo manual de contagem de palavras e expressões.\n\n"
         "Essa fermenta se propõem a agilizar esse processo automatizando a contagem de palavras"\
         "de nuvem de palavras e contadores de palavras.\n\n"
         "Espero que seja útil mesmo estando em uma versão muito simplista, mas o foco é resolver o problema, feedbacks são bem vindos para continuar a melhorar"\
         "a ferramenta\n\n"
         "**Boa análise para todos!!**")
         st.markdown("***")
+        st.markdown("## *Sobre o Autor*")
+        st.markdown("## **Daniel Vieira, Cientista de Dados**\n\n"
+        "*Fazendo o mundo melhor resolvendo problemas com dados.*\n\n"
+        "* [Linkedin](https://www.linkedin.com/in/danielvieiraroberto/)\n\n"
+        "* [Git Hub](https://github.com/danvr)")
+      
+    elif app_mode == 'Word Cloud':
+        st.markdown("***")
+        st.markdown("# Word Cloud")
+        st.markdown(
+            "Gerador interativo de Word Cloud(Nuvem de Plavras) onde o tamanho da palavra "\
+            "é correspondente a frequência e relevância.\n\n")
         st.markdown("## **Como Usar**")
         st.markdown(
-        	"* Escolha a função na barra lateral\n\n"
-        	"* Faça upload do seu arquivo(**Otimizado para Google Sheets**)\n\n"
-        	"* Escolha a coluna corresponde a pergunta de texto aberto\n\n"
-        	"* Obtenha insights!")
-    elif app_mode == 'Word Cloud':
-       word_cloud_generetor()
+            "* Faça upload de arquivo .csv\n\n"
+            "* Escolha a coluna\n\n"
+            "* Obtenha insights!")        
+        word_cloud_generetor()
     elif app_mode == 'Word Counter':
+        st.markdown("***")
+        st.markdown("# Word Counter")
+        st.markdown("Contador de palavras parametrizado por número de n-gramas"\
+        "(sequência continua de deternimado número itens ou palavras)")
+        st.markdown("## **Como Usar**")
+        st.markdown(
+            "* Faça upload de arquivo .csv\n\n"
+            "* Escolha a coluna\n\n"
+            "* Obtenha insights!")    
         word_counter()
 
 
