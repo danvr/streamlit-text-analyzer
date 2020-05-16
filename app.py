@@ -17,7 +17,7 @@ def main():
         st.markdown("## **Bem vindos ao Text Analizer**")
         st.markdown(
             "Projeto de desenvolvido durante a aceleração de Data Science da codenation.\n\n"
-            "Caso queira testar localmente ou contribuir entre no repositório do autor e siga as instruções")
+            "Para mais infocacoes sobre o projeto, segue o link do [GitHub](https://github.com/danvr/streamlit-text-analyzer).")
         st.video("https://www.youtube.com/watch?v=WQ2isQoHMR0")
         st.markdown("***")
         st.markdown("## **Motivação**")
@@ -36,9 +36,9 @@ def main():
         st.markdown("## **Como Usar**")
         st.markdown(
         	"* Escolha a função na barra lateral\n\n"
-        	"* Faca upload do seu arquivo(**Otimizado para Google Sheets**\n\n"
+        	"* Faça upload do seu arquivo(**Otimizado para Google Sheets**)\n\n"
         	"* Escolha a coluna corresponde a pergunta de texto aberto\n\n"
-        	"* Tenha insights!")
+        	"* Obtenha insights!")
     elif app_mode == 'Word Cloud':
        word_cloud_generetor()
     elif app_mode == 'Word Counter':
