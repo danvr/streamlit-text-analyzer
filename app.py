@@ -16,8 +16,9 @@ def main():
         st.markdown("***")
         st.markdown("## **Bem vindos ao Text Analizer**")
         st.markdown(
-            "Projeto de código aberto desenvolvido durante a aceleração de Data Science da codenation.\n\n"
+            "Projeto de desenvolvido durante a aceleração de Data Science da codenation.\n\n"
             "Caso queira testar localmente ou contribuir entre no repositório do autor e siga as instruções")
+        st.video("https://www.youtube.com/watch?v=WQ2isQoHMR0")
         st.markdown("***")
         st.markdown("## **Motivação**")
         st.markdown(
